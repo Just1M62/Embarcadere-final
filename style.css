@@ -10,7 +10,7 @@
     font-family: "Kensmark.03";
 }
 
-body {
+.main-content {
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -25,7 +25,7 @@ width: 100%;
     margin-bottom: 40px ;
 }
 
-img {
+.container img {
     width: 50%;
 }
 
@@ -50,9 +50,25 @@ p {
     font-size: 18px;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+
 @media (max-width: 550px) {
 
-    img {
+    .container img {
         width: 100%;
     }
     h1 {
